@@ -19,7 +19,7 @@
     "svelte": "^3.12.1",
     "typescript": "^3.5.2"
   },
-  "repository": "github:beyonk-adventures/svelte-notifications",
+  "repository": "github:jayswaan/svelte-notifications",
   "keywords": [
     "svelte",
     "notifications",
