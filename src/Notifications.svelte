@@ -5,9 +5,9 @@
 				{toast.msg}
 			</div>
 			<div 
-        class="progress" 
-        style="animation-duration: {toast.timeout}ms;"
-        on:animationend={() => removeToast(toast.id) }>
+        		  class="progress" 
+        		  style="animation-duration: {toast.timeout}ms;"
+        		  on:animationend={() => removeToast(toast.id) }>
 			</div>
 		</li>	
 	{/each}
@@ -31,6 +31,8 @@
 		position: relative;
 		animation: animate-in 350ms forwards;
 		color: #fff;
+		border-radius: .5rem;
+		overflow: hidden;
 	}
 	
 	:global(.toasts) > .toast > .content {
@@ -69,21 +71,19 @@
 	}
 	
 	@keyframes animate-in { 
-		0% { 
-			width: 0; 
+		0% {  
 			opacity: 0; 
-			transform: scale(1.15) translateY(20px);
+			transform: translateY(20px);
 		}
 		100% { 
-			width: 40vw;
 			opacity: 1; 
-			transform: scale(1) translateY(0);
+			transform: translateY(0);
 		}
 	}
 	
 	@keyframes shrink { 
 		0% { 
-			width: 40vw; 
+			width: 30vw; 
 		}
 		100% { 
 			width: 0; 
